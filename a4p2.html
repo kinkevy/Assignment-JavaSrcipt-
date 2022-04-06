@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>A4P2 by Kevin Arthur </title>
+    <style>
+        .product {
+            font-weight: bold;
+        }
+
+        td {
+            padding: 6px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+    </style>
+    <script>
+        function notvalid(input, product) {
+            var amount1 = prompt(input + ", How many of Alienmare x17 Gaming Laptop do you like to purchase?");
+            item1 = parseInt(amount1);
+            var amount2 = prompt(input + ", How many of Mytrix Shi-va by Sky-Tech Gaming Desktop, AMD 6-Core Ryzen 5 5600X  do you like to purchase?");
+            item2 = parseInt(amount2);
+            while (item1 < 0 || item1 > 1000) {
+                amount1 = prompt(amount1 + " is not a valid, try again:", "");
+                item1 = parseInt(amount1);
+            }
+            while (item2 < 0 || item2 > 1000) {
+                amount2 = prompt(amount2 + " is not a valid, try again:", "");
+                item2 = parseInt(amount2);
+
+            }
+            return [item1, item2];
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>A4P2 Big Kevin's Tech shore</h1>
+    <p>Get all kind new tech stuffs at a low cost</p>
+    <p>This month's specials: Alienware x17 Gaming Laptop</p>
+    <table>
+        <tbody>
+            <tr>
+                <td><img src="image/laptop-alienware-x17-cnb-00060rb055-gy-ntp_4.psd.webp" alt="Alienmare x17 Gaming Laptop" title="Alienmare x17 Gaming Laptop" style="width:128px;height:128px;"> </td>
+                <td>
+                    <p class="product">Alienmare x17 Gaming Laptop & $4.700.00 </p>
+                    <p>PRODUCT #1 Tech Specs
+
+                        Processor
+
+                        11th Generation Intel® Core™ i7-11800H (24 MB cache, 8 cores, 16 threads, up to 4.60 GHz Turbo)
+                        Operating System
+
+                        Windows 11 Home, English
+                        Graphics Card
+
+                        NVIDIA® GeForce RTX™ 3060, 6 GB GDDR6
+                        Display
+
+                        17.3" FHD (1920 x 1080) 360Hz 1ms with ComfortView Plus, NVIDIA G-SYNC and Advanced Optimus
+                        Memory
+
+                        16 GB, 2 x 8 GB, DDR4, 3200 MHz
+                        Hard Drive
+
+                        256 GB, M.2, PCIe NVMe, SSD </p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="image/6465245.jpg" alt="Mytrix Shi-va by Sky-Tech Gaming Desktop, AMD 6-Core Ryzen 5 5600X" title="Mytrix Shi-va by Sky-Tech Gaming Desktop, AMD 6-Core Ryzen 5 5600X" style="width:128px;height:128px;"></td>
+                <td>
+                    <p class="product">PRODUCT #2 Mytrix Shi-va by Sky-Tech Gaming Desktop, AMD 6-Core Ryzen 5 5600X $1.700,00 </p>
+                    <p>PRODUCT #2 Powerful Gaming PC Get serious about your improving your game and productivity. It offers the latest generation of powerful PC components to future proof your system ensuring years of quality gameplay and superb performance
+                        【AMD Hexa-Core Ryzen 5 5600Be unstoppable with the unprecedented speed of the AMD Ryzen 5000-Series desktop processors, whether you’re playing the latest games, designing the next skyscraper, or crunching scientific data. With AMD Hexa-Core Ryzen 5 5600X (6C/12T, 3.7/4.6GHz) processors, you’re in the lead</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var input, item1, item2;
+
+        var name = prompt("Welcome to Big Kevin's Tech shore, What is your name? :", "Type here");
+        
+        [item1, item2] = notvalid(name, item1);
+
+
+        document.write("<h2>Items</h2>");
+
+        document.write("<p>" + item1 + " Alienmare x17 Gaming Laptop and  " + item2 + "  Mytrix Shi-va by Sky-Tech Gaming Desktop, AMD 6-Core Ryzen 5 5600X were ordered by " + name + " </p>");
+
+
+        var amount1 = item1 * 470000;
+        document.write("<p>" + item1 + " Alienmare x17 Gaming Laptop  $4.700.00 each... $" + amount1 + "</p>");
+
+        var amount2 = item2 * 170000;
+        document.write("<p>" + item2 + " Mytrix Shi-va by Sky-Tech Gaming Desktop, AMD 6-Core Ryzen 5 5600X   $1.700.00 each... $" + amount2 + "</p>");
+
+        var total = amount1 + amount2;
+        document.write("<p> Grand total for order $" + total + "</p>");
+
+    </script>
+
+
+</body>
+
+</html>

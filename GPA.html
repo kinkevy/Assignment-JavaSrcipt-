@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your GPA</title>
+</head>
+
+<body>
+  s  <h1>My GPA</h1>
+    <p>It show your GPA</p>
+
+    <script>
+        var first = prompt("Please enter your enter Your First name: ", "");
+        var last = prompt("Please enter your last name:", "");
+        var GPA = prompt("Enter the subject");
+        var Grade = parseFloat(prompt('Enter the GPA score  ' + GPA + ':'));
+        if (isNaN(Grade)) {
+            document.write('<p>Is the GPA rating.</p>');
+        } else {
+            document.write('<p> You are considering to know my GPA   ' + GPA + '  with a score of my GPA rate score  ' + Grade + '.</p>');
+            if (Grade >= 4.0) {
+                document.write('<p>The grade is A</p>');
+            } else if (GPA < 3.7) {
+                document.write('<p>The grade is B</p>');
+            } else if (GPA < 2.7) {
+                document.write('<p>The grade is C </p>');
+            } else if (GPA < 1.5) {
+                document.write('<p> The grade is D </p>');
+            } else if (GPA < 0) {
+                document.write('<p>The is a F </p>');
+            }
+
+        };
+
+    </script>
+
+</body>
+
+</html>
+ 

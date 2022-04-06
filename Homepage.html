@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Demo #1</title>
+</head>
+
+<body>
+    <h1>My First Demo</h1>
+    <p>This is my first try</p>
+
+
+
+    <script>
+        //alert('Hey from my JavaScript');
+        var username;
+        var yards;
+        var feet;
+
+        username = prompt("please enter your name:", "Type here");
+        
+        yards = prompt("Please enter a number of yards to be converted");
+        
+         feet = yards * 3;
+
+        document.write("<h2>This is a Headling JavaScript</h2>");
+
+        document.write("<p>Hello to " + username + " from JavaScript</p>");
+        
+        document.write("<p> " + yards + " yards is equal to " + feet + " feet</p>");
+        
+        if (yards >= 100){
+            document.write('<p> That is least the size of a football field</p>');
+        }else{ 
+            document.write('<p>That is small size then a football field size</p.');
+        }
+        
+
+    </script>
+
+</body>
+
+</html>
